@@ -74,7 +74,7 @@ func generateLogs(count int) []LogItem {
 }
 
 func writeUserLogs(user User, wg *sync.WaitGroup) error {
-	time.Sleep(time.Millisecond * 10)
+	// time.Sleep(time.Millisecond * 10)
 	fmt.Printf("Writing logs for user: %d\n", user.id)
 
 	filename := fmt.Sprintf("logs/user_%d.txt", user.id)
